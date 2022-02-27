@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'price_screen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -10,12 +11,11 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Bitcoin tricker',
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
+      theme: ThemeData.dark().copyWith(
+        primaryColor: Colors.lightBlue,
+        scaffoldBackgroundColor: Colors.white,
       ),
-      home: const Scaffold(),
+      home: PriceScreen(),
     );
   }
 }
-
